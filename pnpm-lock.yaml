@@ -6,9 +6,6 @@ dependencies:
     version: 1.0.3(vite@4.3.5)(vue@3.3.2)(vuetify@3.2.4)
 
 devDependencies:
-  '@types/node':
-    specifier: ^18
-    version: 18.16.8
   '@unocss/nuxt':
     specifier: ^0.51.12
     version: 0.51.12(postcss@8.4.23)(vite@4.3.5)(webpack@5.82.1)
@@ -2260,6 +2257,7 @@ packages:
     resolution: {integrity: sha512-z1lix43jBs6UKjcZVKOw2xx69ffE2aG0PygLL5qJ9OS/gy0Ewd1gW/PUQIOIQGXBHWNywSc0floSKoMFF8aK2w==}
     engines: {node: '>=12'}
     hasBin: true
+    requiresBuild: true
     optionalDependencies:
       '@esbuild/android-arm': 0.17.18
       '@esbuild/android-arm64': 0.17.18

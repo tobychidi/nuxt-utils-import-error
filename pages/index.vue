@@ -1,9 +1,15 @@
-<script setup lang="ts">
-function handleClick(payload) {
-  console.log(payload);
-}
+<script lang="ts" setup>
+const snackbar = useSnackbar();
 </script>
 <template>
-  <h1>Hello there</h1>
-  <m-button @click="handleClick">New Snack</m-button>
-</template>
+  <div class="h-[100dvh] flex flex-col justify-center items-center">
+    <h1>Hello there</h1>
+    <div class="flex gap-4">
+      <m-button
+        class="bg-blue-200 p-4 px-6 shadow hover:shadow-lg hover:bg-blue-300 active:scale-95 transition rounded border-none"
+        @click="(p) => useShowSnack(p, snackbar)">New Snack</m-button>
+      <m-button
+        class="bg-blue-200 p-4 px-6 shadow hover:shadow-lg hover:bg-blue-300 active:scale-95 transition rounded border-none"
+        @click="showAlert">New Alert</m-button>
+    </div>
+</div></template>
