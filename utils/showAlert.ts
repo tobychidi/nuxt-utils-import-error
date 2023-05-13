@@ -1,3 +1,6 @@
-export function showAlert(payload: string){
-   alert(payload)
+export function showAlert(payload: string, snackbar){
+   snackbar.add({
+      type: "error",
+      text: payload,
+   });
 }
